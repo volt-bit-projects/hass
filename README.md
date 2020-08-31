@@ -6,6 +6,6 @@ The complete description is available on [the project page](https://www.volt-bit
 
 ![HASKi Central Unit](images/haski_central_unit.jpg)
 
-![Node-RED Dashboard](images/node_red_dashboard.jpg)
+![Node-RED Dashboard](images/node_red_dashboard.png)
 
 Step by step tutorial how to build HASKi hardware is available on the [project page](https://www.volt-bit-projects.com/articles/15/).
