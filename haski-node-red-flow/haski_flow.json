@@ -1,0 +1,3132 @@
+[
+    {
+        "id": "a073c2f0.2aa4f8",
+        "type": "tab",
+        "label": "HASKi",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6dc8747d.8b648c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#2184be",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#2184be",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#2184be",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#4ca9e0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#2184be",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "14c388f3.0b84f7",
+        "type": "ui_tab",
+        "z": "",
+        "name": "HASKi",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ec657c3c.ff61b",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "HASKi",
+        "broker": "192.168.1.18",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "91abba62.74f3",
+        "type": "ui_group",
+        "z": "",
+        "name": "Relays",
+        "tab": "14c388f3.0b84f7",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1a69f004.7dd3a",
+        "type": "ui_group",
+        "z": "",
+        "name": "RF 433 MHz Sockets",
+        "tab": "14c388f3.0b84f7",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "dc2ce1b3.fd139",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wire Inputs",
+        "tab": "14c388f3.0b84f7",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c432877a.68209",
+        "type": "ui_group",
+        "z": "",
+        "name": "RF Inputs",
+        "tab": "14c388f3.0b84f7",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "95625468.6dd8f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Alarm - Zone 1",
+        "tab": "14c388f3.0b84f7",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "110cd55c.94cda3",
+        "type": "ui_group",
+        "z": "",
+        "name": "Alarm - Zone 2",
+        "tab": "14c388f3.0b84f7",
+        "order": 11,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "47d49761.999d1",
+        "type": "ui_group",
+        "z": "",
+        "name": "SONOFF",
+        "tab": "14c388f3.0b84f7",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bda3b91.c8f53c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Mesasurements",
+        "tab": "14c388f3.0b84f7",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "158d131e.56dd15",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "91abba62.74f3",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "62f2be3b.209d6",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "c432877a.68209",
+        "order": 6,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "be8a5c08.d000d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Timer - Relay 1",
+        "tab": "14c388f3.0b84f7",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bd8ab9ec.ac4098",
+        "type": "ui_group",
+        "z": "",
+        "name": "Automations",
+        "tab": "14c388f3.0b84f7",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "764760c0.7666",
+        "type": "ui_group",
+        "z": "",
+        "name": "Timer - Relay 2",
+        "tab": "14c388f3.0b84f7",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ae8ecbc3.2e675",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "be8a5c08.d000d8",
+        "order": 6,
+        "width": "2",
+        "height": 1
+    },
+    {
+        "id": "88bbc7f8.ed88e8",
+        "type": "ui_group",
+        "z": "",
+        "name": "SIM800",
+        "tab": "14c388f3.0b84f7",
+        "order": 12,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ca8fd153.caab3",
+        "type": "ui_button",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "group": "95625468.6dd8f",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "ARM/DISARM",
+        "tooltip": "Press to activate/deactivate alarm",
+        "color": "",
+        "bgcolor": "#119B2A",
+        "icon": "",
+        "payload": "cnt_zone1_change",
+        "payloadType": "str",
+        "topic": "haski/cnt/zone1",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "b54eb85f.58e348"
+            ]
+        ]
+    },
+    {
+        "id": "b54eb85f.58e348",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cnt/zone1",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 400,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "45f61a6d.63688c",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "95625468.6dd8f",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#FF0000",
+                "value": "ack_zone1_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#8F3F3F",
+                "value": "ack_zone1_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED2",
+        "x": 890,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5eeb553b.a37a9c",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/zone1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "45f61a6d.63688c",
+                "4fa7dbc.3ccad24"
+            ]
+        ]
+    },
+    {
+        "id": "e1298f39.ce8e68",
+        "type": "ui_button",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "group": "110cd55c.94cda3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "ARM/DISARM",
+        "tooltip": "Press to activate/deactivate alarm",
+        "color": "",
+        "bgcolor": "#119B2A",
+        "icon": "",
+        "payload": "cnt_zone2_change",
+        "payloadType": "str",
+        "topic": "haski/cnt/zone2",
+        "x": 180,
+        "y": 280,
+        "wires": [
+            [
+                "a330731b.d36588"
+            ]
+        ]
+    },
+    {
+        "id": "a330731b.d36588",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cnt/zone2",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 400,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5b3c86f5.d22158",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "110cd55c.94cda3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#FF0000",
+                "value": "ack_zone2_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#8F3F3F",
+                "value": "ack_zone2_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED3",
+        "x": 890,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e481230c.2434e",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/zone2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "5b3c86f5.d22158",
+                "c113634f.73fc3"
+            ]
+        ]
+    },
+    {
+        "id": "5d2c323.a8470cc",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Socket 1",
+        "tooltip": "",
+        "group": "1a69f004.7dd3a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "cmd_rf_out1_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "cmd_rf_out1_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 400,
+        "y": 540,
+        "wires": [
+            [
+                "a940ad68.42c9c"
+            ]
+        ]
+    },
+    {
+        "id": "a940ad68.42c9c",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out1",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "31b42f70.c40b1",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Socket 2",
+        "tooltip": "",
+        "group": "1a69f004.7dd3a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "cmd_rf_out2_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "cmd_rf_out2_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 400,
+        "y": 780,
+        "wires": [
+            [
+                "336f34cf.7040f4"
+            ]
+        ]
+    },
+    {
+        "id": "336f34cf.7040f4",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out2",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 650,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3a35b085.708b6",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Socket 3",
+        "tooltip": "",
+        "group": "1a69f004.7dd3a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "cmd_rf_out3_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "cmd_rf_out3_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 400,
+        "y": 1020,
+        "wires": [
+            [
+                "9ee04f9c.10474"
+            ]
+        ]
+    },
+    {
+        "id": "9ee04f9c.10474",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out3",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 650,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a49712b0.f13f6",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "1a69f004.7dd3a",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "label": "Socket 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "ack_rf_out1_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "ack_rf_out1_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED4",
+        "x": 1190,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b03d9830.26e32",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/rf_out1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 960,
+        "y": 540,
+        "wires": [
+            [
+                "a49712b0.f13f6"
+            ]
+        ]
+    },
+    {
+        "id": "34a64cf4.0042e4",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "1a69f004.7dd3a",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Socket 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "ack_rf_out2_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "ack_rf_out2_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED5",
+        "x": 1190,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "5df3ec30.016a84",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/rf_out2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 960,
+        "y": 780,
+        "wires": [
+            [
+                "34a64cf4.0042e4"
+            ]
+        ]
+    },
+    {
+        "id": "aea6bb11.da8ce",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "1a69f004.7dd3a",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Socket 3",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "ack_rf_out3_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "ack_rf_out3_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED6",
+        "x": 1190,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "7bdfc4cc.7e58fc",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/rf_out3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 960,
+        "y": 1020,
+        "wires": [
+            [
+                "aea6bb11.da8ce"
+            ]
+        ]
+    },
+    {
+        "id": "593e7e03.6259a",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "group": "95625468.6dd8f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Zone1 status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1090,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4fa7dbc.3ccad24",
+        "type": "function",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "func": "\nif (msg.payload == \"ack_zone1_on\")\n{\n    msg.payload = \"Secured\";\n}\n\nelse if (msg.payload == \"ack_zone1_off\" )\n{\n    msg.payload = \"OFF\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 900,
+        "y": 160,
+        "wires": [
+            [
+                "593e7e03.6259a"
+            ]
+        ]
+    },
+    {
+        "id": "ace44751.bf9168",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Zone 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cnt/zone1",
+        "payload": "cnt_zone1_change",
+        "payloadType": "str",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "b54eb85f.58e348"
+            ]
+        ]
+    },
+    {
+        "id": "c4a73a68.f66788",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Zone 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cnt/zone2",
+        "payload": "cnt_zone2_change",
+        "payloadType": "str",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "a330731b.d36588"
+            ]
+        ]
+    },
+    {
+        "id": "c113634f.73fc3",
+        "type": "function",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "func": "\nif (msg.payload == \"ack_zone2_on\")\n{\n    msg.payload = \"Secured\";\n}\n\nelse if (msg.payload == \"ack_zone2_off\" )\n{\n    msg.payload = \"OFF\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 900,
+        "y": 360,
+        "wires": [
+            [
+                "486bc452.9f5924"
+            ]
+        ]
+    },
+    {
+        "id": "486bc452.9f5924",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "group": "110cd55c.94cda3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Zone2 status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1090,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5126f113.7881b8",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel1",
+        "qos": "0",
+        "retain": "true",
+        "broker": "ec657c3c.ff61b",
+        "x": 640,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "42aa7698.822aa",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/rel1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 930,
+        "y": 1320,
+        "wires": [
+            [
+                "dbcc406c.eddd9"
+            ]
+        ]
+    },
+    {
+        "id": "6b3090fc.df4fa8",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Relay 1",
+        "tooltip": "",
+        "group": "91abba62.74f3",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "cmd_rel1_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "cmd_rel1_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 380,
+        "y": 1320,
+        "wires": [
+            [
+                "5126f113.7881b8"
+            ]
+        ]
+    },
+    {
+        "id": "dbcc406c.eddd9",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "91abba62.74f3",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Relay 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "ack_rel1_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "ack_rel1_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED7",
+        "x": 1170,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "f2232cfc.d288e",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel2",
+        "qos": "0",
+        "retain": "true",
+        "broker": "ec657c3c.ff61b",
+        "x": 640,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "deea21a0.9ab0b8",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/rel2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 930,
+        "y": 1620,
+        "wires": [
+            [
+                "5d644abf.26bcc4"
+            ]
+        ]
+    },
+    {
+        "id": "6cdde0c2.bfdd8",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Relay 2",
+        "tooltip": "",
+        "group": "91abba62.74f3",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "haski/cmd/rel2",
+        "style": "",
+        "onvalue": "cmd_rel2_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "cmd_rel2_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 380,
+        "y": 1620,
+        "wires": [
+            [
+                "f2232cfc.d288e"
+            ]
+        ]
+    },
+    {
+        "id": "5d644abf.26bcc4",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "91abba62.74f3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Relay 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "ack_rel2_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "ack_rel2_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED8",
+        "x": 1170,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "5109a240.5d3814",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "91abba62.74f3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Siren",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#FF0000",
+                "value": "ack_rels_on",
+                "valueType": "str"
+            },
+            {
+                "color": "#8F3F3F",
+                "value": "ack_rels_off",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED9",
+        "x": 1170,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "54820e82.aa9f3",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/ack/rels",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 930,
+        "y": 1860,
+        "wires": [
+            [
+                "5109a240.5d3814"
+            ]
+        ]
+    },
+    {
+        "id": "24ce026a.ec459e",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/sonoff1/POWER",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 230,
+        "y": 2080,
+        "wires": [
+            [
+                "21bdf0ac.234dc8",
+                "4a468df4.431c74",
+                "3a8f171b.858b7"
+            ]
+        ]
+    },
+    {
+        "id": "924bc638.ac7668",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmnd/sonoff1/POWER",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 800,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "38f000d9.bdb158",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "SONOFF ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 490,
+        "y": 2260,
+        "wires": [
+            [
+                "924bc638.ac7668"
+            ]
+        ]
+    },
+    {
+        "id": "ccb8bdb2.20bff8",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "SONOFF OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 460,
+        "y": 2200,
+        "wires": [
+            [
+                "924bc638.ac7668"
+            ]
+        ]
+    },
+    {
+        "id": "21bdf0ac.234dc8",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "3ba0afc4.ad273",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/tele/sonoff1/SENSOR",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 220,
+        "y": 2500,
+        "wires": [
+            [
+                "739f1507.a68234"
+            ]
+        ]
+    },
+    {
+        "id": "4df76034.ecad68",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "739f1507.a68234",
+        "type": "json",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 2500,
+        "wires": [
+            [
+                "bb9d147.95bd8e8"
+            ]
+        ]
+    },
+    {
+        "id": "bb9d147.95bd8e8",
+        "type": "change",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.ENERGY.Voltage",
+                "pt": "msg",
+                "to": "payload.ENERGY.Voltage",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.ENERGY.Current",
+                "pt": "msg",
+                "to": "payload.ENERGY.Current",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.ENERGY.Power",
+                "pt": "msg",
+                "to": "payload.ENERGY.Power",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 2500,
+        "wires": [
+            [
+                "1a3e0028.2d7928",
+                "4df76034.ecad68",
+                "71f2f286.dd0fcc",
+                "69fba8fa.ffea38",
+                "e487f243.de3ae8"
+            ]
+        ]
+    },
+    {
+        "id": "1a3e0028.2d7928",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "group": "47d49761.999d1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Voltage",
+        "format": "{{payload.ENERGY.Voltage}}",
+        "layout": "row-spread",
+        "x": 880,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "71f2f286.dd0fcc",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "group": "47d49761.999d1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power",
+        "format": "{{payload.ENERGY.Power}}",
+        "layout": "row-spread",
+        "x": 870,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "69fba8fa.ffea38",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "group": "47d49761.999d1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current",
+        "format": "{{payload.ENERGY.Current}}",
+        "layout": "row-spread",
+        "x": 880,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "3a8f171b.858b7",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "SONOFF",
+        "tooltip": "",
+        "group": "47d49761.999d1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 500,
+        "y": 2140,
+        "wires": [
+            [
+                "924bc638.ac7668"
+            ]
+        ]
+    },
+    {
+        "id": "4a468df4.431c74",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "47d49761.999d1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "ON",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "OFF",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED10",
+        "x": 490,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "9a75e337.536fc8",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 180,
+        "y": 1320,
+        "wires": [
+            [
+                "6b3090fc.df4fa8"
+            ]
+        ]
+    },
+    {
+        "id": "49d3345b.100acc",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 180,
+        "y": 1620,
+        "wires": [
+            [
+                "6cdde0c2.bfdd8"
+            ]
+        ]
+    },
+    {
+        "id": "118219d3.3e00fe",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "5d2c323.a8470cc"
+            ]
+        ]
+    },
+    {
+        "id": "b73b105f.d8607",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 780,
+        "wires": [
+            [
+                "31b42f70.c40b1"
+            ]
+        ]
+    },
+    {
+        "id": "8c57aba6.3cb2f",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 1020,
+        "wires": [
+            [
+                "3a35b085.708b6"
+            ]
+        ]
+    },
+    {
+        "id": "c619a59c.ac248",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Socket 1 - ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rf_out1",
+        "payload": "cmd_rf_out1_on",
+        "payloadType": "str",
+        "x": 410,
+        "y": 600,
+        "wires": [
+            [
+                "a940ad68.42c9c"
+            ]
+        ]
+    },
+    {
+        "id": "a6d9057.3e586f8",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Socket 1 - OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rf_out1",
+        "payload": "cmd_rf_out1_off",
+        "payloadType": "str",
+        "x": 420,
+        "y": 660,
+        "wires": [
+            [
+                "a940ad68.42c9c"
+            ]
+        ]
+    },
+    {
+        "id": "87bfc08a.482f38",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Socket 2 - ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rf_out2",
+        "payload": "cmd_rf_out2_on",
+        "payloadType": "str",
+        "x": 410,
+        "y": 840,
+        "wires": [
+            [
+                "336f34cf.7040f4"
+            ]
+        ]
+    },
+    {
+        "id": "631d1691.3b76c8",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Socket 2 - OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rf_out2",
+        "payload": "cmd_rf_out2_off",
+        "payloadType": "str",
+        "x": 420,
+        "y": 900,
+        "wires": [
+            [
+                "336f34cf.7040f4"
+            ]
+        ]
+    },
+    {
+        "id": "a5943e21.d76408",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Socket 3 - ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rf_out3",
+        "payload": "cmd_rf_out3_on",
+        "payloadType": "str",
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [
+                "9ee04f9c.10474"
+            ]
+        ]
+    },
+    {
+        "id": "89d2f6c9.8fc488",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Socket 3 - OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rf_out3",
+        "payload": "cmd_rf_out3_off",
+        "payloadType": "str",
+        "x": 420,
+        "y": 1140,
+        "wires": [
+            [
+                "9ee04f9c.10474"
+            ]
+        ]
+    },
+    {
+        "id": "f6290a21.1d3e1",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Relay 1 - ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rel1",
+        "payload": "cmd_rel1_on",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1380,
+        "wires": [
+            [
+                "5126f113.7881b8"
+            ]
+        ]
+    },
+    {
+        "id": "c1b55dbc.8c5be",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Relay 1 - OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rel1",
+        "payload": "cmd_rel1_off",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1440,
+        "wires": [
+            [
+                "5126f113.7881b8"
+            ]
+        ]
+    },
+    {
+        "id": "3e1a0168.bbe0ae",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Relay 2 - ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rel2",
+        "payload": "cmd_rel2_on",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1680,
+        "wires": [
+            [
+                "f2232cfc.d288e"
+            ]
+        ]
+    },
+    {
+        "id": "9e1ef58b.329aa8",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Relay 2 - OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rel2",
+        "payload": "cmd_rel2_off",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1740,
+        "wires": [
+            [
+                "f2232cfc.d288e"
+            ]
+        ]
+    },
+    {
+        "id": "6475932c.381e6c",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rels",
+        "qos": "0",
+        "retain": "true",
+        "broker": "ec657c3c.ff61b",
+        "x": 660,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "c9ffcd8.270963",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Siren - ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rels",
+        "payload": "cmd_rels_on",
+        "payloadType": "str",
+        "x": 380,
+        "y": 1860,
+        "wires": [
+            [
+                "6475932c.381e6c"
+            ]
+        ]
+    },
+    {
+        "id": "2e2ba401.227db4",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Siren - OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/rels",
+        "payload": "cmd_rels_off",
+        "payloadType": "str",
+        "x": 390,
+        "y": 1920,
+        "wires": [
+            [
+                "6475932c.381e6c"
+            ]
+        ]
+    },
+    {
+        "id": "8e1253f0.b3663",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/wire_inp1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 2660,
+        "wires": [
+            [
+                "5eb05a2b.52ecdc"
+            ]
+        ]
+    },
+    {
+        "id": "5eb05a2b.52ecdc",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "dc2ce1b3.fd139",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Input 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "stat_wire_inp1_opened",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "stat_wire_inp1_closed",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED11",
+        "x": 410,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "99136f8b.aaded",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/wire_inp2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 2740,
+        "wires": [
+            [
+                "345b03ef.88655c"
+            ]
+        ]
+    },
+    {
+        "id": "345b03ef.88655c",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "dc2ce1b3.fd139",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Input 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "stat_wire_inp2_opened",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "stat_wire_inp2_closed",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED12",
+        "x": 410,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "51ca84b0.740a8c",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/wire_inp3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 2820,
+        "wires": [
+            [
+                "5bdb2dd.5807754"
+            ]
+        ]
+    },
+    {
+        "id": "5bdb2dd.5807754",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "dc2ce1b3.fd139",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Input 3",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "stat_wire_inp3_opened",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "stat_wire_inp3_closed",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED13",
+        "x": 410,
+        "y": 2820,
+        "wires": []
+    },
+    {
+        "id": "e5fed9e.a8e0928",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/wire_inp4",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 190,
+        "y": 2900,
+        "wires": [
+            [
+                "78601a12.affd04"
+            ]
+        ]
+    },
+    {
+        "id": "78601a12.affd04",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "dc2ce1b3.fd139",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Input 4",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "stat_wire_inp4_opened",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "stat_wire_inp4_closed",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED14",
+        "x": 410,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "7a6eaf70.e7619",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/rf_inp1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 180,
+        "y": 3060,
+        "wires": [
+            [
+                "940f9a5.6fa3668"
+            ]
+        ]
+    },
+    {
+        "id": "940f9a5.6fa3668",
+        "type": "ui_led",
+        "z": "a073c2f0.2aa4f8",
+        "group": "c432877a.68209",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Input 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#01DF01",
+                "value": "stat_rf_inp1_opened_nv",
+                "valueType": "str"
+            },
+            {
+                "color": "#0B6121",
+                "value": "stat_rf_inp1_closed_nv",
+                "valueType": "str"
+            },
+            {
+                "color": "#f3e72c",
+                "value": "stat_rf_inp1_opened_lv",
+                "valueType": "str"
+            },
+            {
+                "color": "#76700b",
+                "value": "stat_rf_inp1_closed_lv",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "name": "LED15",
+        "x": 410,
+        "y": 3060,
+        "wires": []
+    },
+    {
+        "id": "e487f243.de3ae8",
+        "type": "ui_gauge",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "group": "bda3b91.c8f53c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltage",
+        "label": "Volts",
+        "format": "{{payload.ENERGY.Voltage}}",
+        "min": 0,
+        "max": "380",
+        "colors": [
+            "#d1d70f",
+            "#00c131",
+            "#ca3838"
+        ],
+        "seg1": "220",
+        "seg2": "240",
+        "x": 880,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "95d351b2.07918",
+        "type": "function",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "func": "var payload=msg.payload;\nvar topic=msg.topic;\n\nfunction checktime(time)\n{\n    var error_flag=false;\n    var a=time.split(\":\"); \n    node.log(a)\n    if(a.length <2)\n        error_flag=true;\n    if(parseInt(a[0])>23)\n        error_flag=true;\n    if(parseInt(a[1])>=60)\n        error_flag=true;\n    if(parseInt(a[2])>=60)\n        error_flag=true;\n\n    return error_flag;  \n}\n\nif (topic==\"on_time\")\n{\n    flow.set(\"on_time\",msg.payload);\n}\n\nif (topic==\"off_time\")\n \n{\n    flow.set(\"off_time\",msg.payload);\n}\n\nif (topic==\"submit\")\n{\n    var on_time= flow.get(\"on_time\");\n    var off_time= flow.get(\"off_time\");\n    var error_flag=false;\n    if(checktime(on_time)) //ok\n        error_flag=true;\n    if(checktime(off_time)) //ok\n        error_flag=true;\n  \n    if(!error_flag)\n    {\n        newpayload={};\n        newpayload.ontime=on_time;\n        newpayload.offtime=off_time;\n        msg.payload=newpayload;\n    \n        return[msg,null];\n    }\n    \n    else\n    {\n        var msg1={};\n        msg1.payload=\"error time not set\";\n        return [null,msg1]; \n    }\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 3480,
+        "wires": [
+            [
+                "aca460bf.0e263"
+            ],
+            [
+                "19d133ad.61ab3c",
+                "539ce482.ee73ec"
+            ]
+        ]
+    },
+    {
+        "id": "d9eb4e00.64c2f8",
+        "type": "ui_text_input",
+        "z": "a073c2f0.2aa4f8",
+        "name": "On Time",
+        "label": "On Time",
+        "tooltip": "",
+        "group": "be8a5c08.d000d8",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "on_time",
+        "x": 170,
+        "y": 3480,
+        "wires": [
+            [
+                "95d351b2.07918"
+            ]
+        ]
+    },
+    {
+        "id": "1d22ea0f.e65ac6",
+        "type": "ui_text_input",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Off Time",
+        "label": "Off Time",
+        "tooltip": "",
+        "group": "be8a5c08.d000d8",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "off_time",
+        "x": 170,
+        "y": 3540,
+        "wires": [
+            [
+                "95d351b2.07918"
+            ]
+        ]
+    },
+    {
+        "id": "3f9253b8.074d9c",
+        "type": "ui_button",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Submit",
+        "group": "be8a5c08.d000d8",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "submit",
+        "x": 170,
+        "y": 3600,
+        "wires": [
+            [
+                "95d351b2.07918"
+            ]
+        ]
+    },
+    {
+        "id": "19d133ad.61ab3c",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 710,
+        "y": 3540,
+        "wires": []
+    },
+    {
+        "id": "aca460bf.0e263",
+        "type": "schedex",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "passthroughunhandled": false,
+        "suspended": false,
+        "lat": "50.0755381",
+        "lon": "14.43780049",
+        "ontime": "07:28",
+        "ontopic": "haski/cmd/rel1",
+        "onpayload": "cmd_rel1_on",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "offtime": "goldenHour",
+        "offtopic": "haski/cmd/rel1",
+        "offpayload": "cmd_rel1_off",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 430,
+        "y": 3380,
+        "wires": [
+            [
+                "3d056d18.f668da",
+                "dd025626.92e258",
+                "539ce482.ee73ec"
+            ]
+        ]
+    },
+    {
+        "id": "3d056d18.f668da",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 3380,
+        "wires": []
+    },
+    {
+        "id": "b068d257.6ad7",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 170,
+        "y": 3320,
+        "wires": [
+            [
+                "aca460bf.0e263"
+            ]
+        ]
+    },
+    {
+        "id": "e7cca6bd.f72728",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 170,
+        "y": 3400,
+        "wires": [
+            [
+                "aca460bf.0e263"
+            ]
+        ]
+    },
+    {
+        "id": "dd025626.92e258",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel1",
+        "qos": "0",
+        "retain": "true",
+        "broker": "ec657c3c.ff61b",
+        "x": 720,
+        "y": 3460,
+        "wires": []
+    },
+    {
+        "id": "539ce482.ee73ec",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "d": true,
+        "group": "be8a5c08.d000d8",
+        "order": 5,
+        "width": "5",
+        "height": "1",
+        "name": "Switch State",
+        "label": "Switch State",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "c1c106c.8c885f8",
+        "type": "function",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "func": "var payload=msg.payload;\nvar topic=msg.topic;\n\nfunction checktime(time)\n{\n    var error_flag=false;\n    var a=time.split(\":\"); \n    node.log(a)\n    if(a.length <2)\n        error_flag=true;\n    if(parseInt(a[0])>23)\n        error_flag=true;\n    if(parseInt(a[1])>=60)\n        error_flag=true;\n    if(parseInt(a[2])>=60)\n        error_flag=true;\n\n    return error_flag;  \n}\n\nif (topic==\"on_time\")\n{\n    flow.set(\"on_time\",msg.payload);\n}\n\nif (topic==\"off_time\")\n \n{\n    flow.set(\"off_time\",msg.payload);\n}\n\nif (topic==\"submit\")\n{\n    var on_time= flow.get(\"on_time\");\n    var off_time= flow.get(\"off_time\");\n    var error_flag=false;\n    if(checktime(on_time)) //ok\n        error_flag=true;\n    if(checktime(off_time)) //ok\n        error_flag=true;\n  \n    if(!error_flag)\n    {\n        newpayload={};\n        newpayload.ontime=on_time;\n        newpayload.offtime=off_time;\n        msg.payload=newpayload;\n    \n        return[msg,null];\n    }\n    \n    else\n    {\n        var msg1={};\n        msg1.payload=\"error time not set\";\n        return [null,msg1]; \n    }\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 4000,
+        "wires": [
+            [
+                "101eaa65.1890ae"
+            ],
+            [
+                "11fd32d6.a19835",
+                "7db779b4.24c318"
+            ]
+        ]
+    },
+    {
+        "id": "b3346e4.42d589",
+        "type": "ui_text_input",
+        "z": "a073c2f0.2aa4f8",
+        "name": "On Time",
+        "label": "On Time",
+        "tooltip": "",
+        "group": "764760c0.7666",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "on_time",
+        "x": 190,
+        "y": 4000,
+        "wires": [
+            [
+                "c1c106c.8c885f8"
+            ]
+        ]
+    },
+    {
+        "id": "4519b2e3.66815c",
+        "type": "ui_text_input",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Off Time",
+        "label": "Off Time",
+        "tooltip": "",
+        "group": "764760c0.7666",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "off_time",
+        "x": 190,
+        "y": 4060,
+        "wires": [
+            [
+                "c1c106c.8c885f8"
+            ]
+        ]
+    },
+    {
+        "id": "4a65806d.87b95",
+        "type": "ui_button",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Submit",
+        "group": "764760c0.7666",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "submit",
+        "x": 190,
+        "y": 4120,
+        "wires": [
+            [
+                "c1c106c.8c885f8"
+            ]
+        ]
+    },
+    {
+        "id": "11fd32d6.a19835",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 4060,
+        "wires": []
+    },
+    {
+        "id": "101eaa65.1890ae",
+        "type": "schedex",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "passthroughunhandled": false,
+        "suspended": false,
+        "lat": "50.0755381",
+        "lon": "14.43780049",
+        "ontime": "07:28",
+        "ontopic": "haski/cmd/rel2",
+        "onpayload": "cmd_rel2_on",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "offtime": "goldenHour",
+        "offtopic": "haski/cmd/rel2",
+        "offpayload": "cmd_rel2_off",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 450,
+        "y": 3900,
+        "wires": [
+            [
+                "727235a3.6c3c2c",
+                "e253c78b.bcbb48",
+                "7db779b4.24c318"
+            ]
+        ]
+    },
+    {
+        "id": "727235a3.6c3c2c",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 3900,
+        "wires": []
+    },
+    {
+        "id": "bbccd00.757003",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 190,
+        "y": 3840,
+        "wires": [
+            [
+                "101eaa65.1890ae"
+            ]
+        ]
+    },
+    {
+        "id": "6e2c1e57.773ff",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 190,
+        "y": 3920,
+        "wires": [
+            [
+                "101eaa65.1890ae"
+            ]
+        ]
+    },
+    {
+        "id": "e253c78b.bcbb48",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel2",
+        "qos": "0",
+        "retain": "true",
+        "broker": "ec657c3c.ff61b",
+        "x": 740,
+        "y": 3980,
+        "wires": []
+    },
+    {
+        "id": "7db779b4.24c318",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "d": true,
+        "group": "764760c0.7666",
+        "order": 10,
+        "width": "5",
+        "height": "1",
+        "name": "Switch State",
+        "label": "Switch State",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 3820,
+        "wires": []
+    },
+    {
+        "id": "d0e35456.e9fdd8",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Enabled",
+        "tooltip": "",
+        "group": "be8a5c08.d000d8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "suspended false",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "suspended true",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 160,
+        "y": 3240,
+        "wires": [
+            [
+                "aca460bf.0e263"
+            ]
+        ]
+    },
+    {
+        "id": "2cd4f70a.3ed6e",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Enabled",
+        "tooltip": "",
+        "group": "764760c0.7666",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "suspended false",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "suspended true",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 180,
+        "y": 3760,
+        "wires": [
+            [
+                "101eaa65.1890ae"
+            ]
+        ]
+    },
+    {
+        "id": "8f9da001.2055c",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/wire_inp1",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 230,
+        "y": 4320,
+        "wires": [
+            [
+                "fbb28935.188b18",
+                "f0fc6959.fc34f"
+            ]
+        ]
+    },
+    {
+        "id": "fbb28935.188b18",
+        "type": "function",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "func": "if (msg.topic === \"enable\") {\n    context.pass = (msg.payload === true) ? true : false;\n    return null;  // exit out early as it's just the control\n}\nif (context.pass) {\n    return msg; // if enabled pass msg\n}\nreturn null; // or drop it",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 4320,
+        "wires": [
+            [
+                "603eefc9.705cf8"
+            ]
+        ]
+    },
+    {
+        "id": "6b935fbd.0a70d",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Enable automation",
+        "tooltip": "",
+        "group": "bd8ab9ec.ac4098",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "enable",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 230,
+        "y": 4260,
+        "wires": [
+            [
+                "fbb28935.188b18"
+            ]
+        ]
+    },
+    {
+        "id": "ee83df58.83d528",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "test message",
+        "payloadType": "str",
+        "x": 210,
+        "y": 4400,
+        "wires": [
+            [
+                "fbb28935.188b18"
+            ]
+        ]
+    },
+    {
+        "id": "603eefc9.705cf8",
+        "type": "trigger",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "op1": "cmd_rel1_on",
+        "op2": "cmd_rel1_off",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 740,
+        "y": 4320,
+        "wires": [
+            [
+                "454529b6.0ae28"
+            ]
+        ]
+    },
+    {
+        "id": "454529b6.0ae28",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rel1",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 1000,
+        "y": 4320,
+        "wires": []
+    },
+    {
+        "id": "12ec57ef.a67e6",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/stat/wire_inp2",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 230,
+        "y": 4620,
+        "wires": [
+            [
+                "e892d4c8.18bf"
+            ]
+        ]
+    },
+    {
+        "id": "e892d4c8.18bf",
+        "type": "function",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "func": "if (msg.topic === \"gate\") {\n    context.pass = (msg.payload === true) ? true : false;\n    return null;  // exit out early as it's just the control\n}\nif (context.pass) {\n    return msg; // if enabled pass msg\n}\nreturn null; // or drop it",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 4620,
+        "wires": [
+            [
+                "9e8681a6.56753"
+            ]
+        ]
+    },
+    {
+        "id": "cba65692.c162a8",
+        "type": "ui_switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "label": "Enable automation",
+        "tooltip": "",
+        "group": "bd8ab9ec.ac4098",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "gate",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 230,
+        "y": 4560,
+        "wires": [
+            [
+                "e892d4c8.18bf"
+            ]
+        ]
+    },
+    {
+        "id": "48bb2370.4f725c",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "test message",
+        "payloadType": "str",
+        "x": 210,
+        "y": 4700,
+        "wires": [
+            [
+                "e892d4c8.18bf"
+            ]
+        ]
+    },
+    {
+        "id": "c610ed22.5a17",
+        "type": "trigger",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "op1": "cmd_rel2_on",
+        "op2": "cmd_rel2_off",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "30",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 930,
+        "y": 4620,
+        "wires": [
+            [
+                "41659c27.417c14"
+            ]
+        ]
+    },
+    {
+        "id": "41659c27.417c14",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/rf_out1",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 1130,
+        "y": 4620,
+        "wires": []
+    },
+    {
+        "id": "ebcdefc4.e98208",
+        "type": "comment",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Timer 1",
+        "info": "",
+        "x": 150,
+        "y": 3180,
+        "wires": []
+    },
+    {
+        "id": "c0c029ab.1777",
+        "type": "comment",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Timer 2",
+        "info": "",
+        "x": 170,
+        "y": 3700,
+        "wires": []
+    },
+    {
+        "id": "f00dc2ef.b6ac38",
+        "type": "comment",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Automation 1",
+        "info": "",
+        "x": 210,
+        "y": 4200,
+        "wires": []
+    },
+    {
+        "id": "15ebfeb3.ddc2c1",
+        "type": "comment",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Automation 2",
+        "info": "",
+        "x": 210,
+        "y": 4500,
+        "wires": []
+    },
+    {
+        "id": "f0fc6959.fc34f",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 4440,
+        "wires": []
+    },
+    {
+        "id": "9e8681a6.56753",
+        "type": "time-range-switch",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "lat": "50.0755381",
+        "lon": "14.43780049",
+        "startTime": "dusk",
+        "endTime": "23:00",
+        "startOffset": 0,
+        "endOffset": 0,
+        "x": 690,
+        "y": 4620,
+        "wires": [
+            [
+                "c610ed22.5a17"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d40b3d2a.e19c88",
+        "type": "mqtt out",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/cmd/sim800",
+        "qos": "",
+        "retain": "",
+        "broker": "ec657c3c.ff61b",
+        "x": 450,
+        "y": 4840,
+        "wires": []
+    },
+    {
+        "id": "887482b1.17c8b8",
+        "type": "inject",
+        "z": "a073c2f0.2aa4f8",
+        "name": "Check credit",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "haski/cmd/sim800",
+        "payload": "{\"command\":\"credit\",\"operator\":\"O2\"}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 4840,
+        "wires": [
+            [
+                "d40b3d2a.e19c88"
+            ]
+        ]
+    },
+    {
+        "id": "4546e738.85322",
+        "type": "mqtt in",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "topic": "haski/tlm/sim800",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "ec657c3c.ff61b",
+        "x": 690,
+        "y": 4840,
+        "wires": [
+            [
+                "ebf23938.8a7148"
+            ]
+        ]
+    },
+    {
+        "id": "5c058a11.4b2294",
+        "type": "debug",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.credit",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 4840,
+        "wires": []
+    },
+    {
+        "id": "ebf23938.8a7148",
+        "type": "json",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 920,
+        "y": 4840,
+        "wires": [
+            [
+                "5c058a11.4b2294",
+                "f5373e08.115f3"
+            ]
+        ]
+    },
+    {
+        "id": "f5373e08.115f3",
+        "type": "ui_text",
+        "z": "a073c2f0.2aa4f8",
+        "group": "88bbc7f8.ed88e8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Remaining credit",
+        "format": "{{msg.payload.credit}}",
+        "layout": "row-spread",
+        "x": 1150,
+        "y": 4780,
+        "wires": []
+    },
+    {
+        "id": "6e96c76f.6df1b",
+        "type": "ui_button",
+        "z": "a073c2f0.2aa4f8",
+        "name": "",
+        "group": "88bbc7f8.ed88e8",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Check credit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"command\":\"credit\",\"operator\":\"O2\"}",
+        "payloadType": "json",
+        "topic": "haski/cmd/sim800",
+        "x": 200,
+        "y": 4920,
+        "wires": [
+            [
+                "d40b3d2a.e19c88"
+            ]
+        ]
+    }
+]
